@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Färdtjänst</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="head">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="icons/logo.png"
+              alt="Färdtjänstens logotyp, klicka för att gå till startsidan"
+            />
+          </a>
+        </div>
+
+        <!-- Hamburgermeny-knapp (för mobil) -->
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <!-- Menyn + Sökfält -->
+        <div class="nav-container">
+          <div class="nav-links">
+            <a href="book.html">Boka resa</a>
+            <a href="faq.html">Om Färdtjänst</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="trips.html">Mina resor</a>
+          </div>
+
+          <!-- Sökfältet -->
+          <div class="search-container">
+            <input type="text" placeholder="Sök..." />
+            <button>
+              <img src="icons/find.svg" alt="förstoringsglas" />
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="headerImage">
+        <img src="images/header1.png" alt="person sittandes i rullstol" />
+      </div>
+      <h1 class="headerHeading">
+        Mina kommande <br />
+        färdtjänstresor
+      </h1>
+    </header>
+
+    <!-- Sektion som visar användarens dagens och framtida resor med möjlighet att ändra eller avboka -->
+    <section class="trips-section">
+      <h2>Mina resor</h2>
+      <div class="trip">
+        <div class="trip-header">
+          <span>Dagens resor</span>
+          <span class="trip-arrow">&#x25B8;</span>
+        </div>
+        <div class="trip-content">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Måndag 9:e december</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10:00</td>
+                <td>Adress, 523 34 Ulricehamn</td>
+              </tr>
+              <tr>
+                <td>10:15</td>
+                <td>Adress, 523 34 Ulricehamn</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="trip-actions">
+            <a href="#" class="trip-link"
+              ><i class="fas fa-edit"></i>Ändra resa</a
+            >
+            <a href="#" class="trip-link cancel-trip"
+              ><i class="fas fa-trash"></i>Avboka</a
+            >
+          </div>
+        </div>
+        <div class="trip-content">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Måndag 9:e december</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12:00</td>
+                <td>Adress, 523 34 Ulricehamn</td>
+              </tr>
+              <tr>
+                <td>12:15</td>
+                <td>Adress, 523 34 Ulricehamn</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="trip-actions">
+            <a href="#" class="trip-link"
+              ><i class="fas fa-edit"></i>Ändra resa</a
+            >
+            <a href="#" class="trip-link cancel-trip"
+              ><i class="fas fa-trash"></i>Avboka</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="trip">
+        <div class="trip-header">
+          <span>Framtida resor</span>
+          <span class="trip-arrow">&#x25B8;</span>
+        </div>
+        <div class="trip-content">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Tisdag 10:e december</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>16:00</td>
+                <td>Adress, 523 34 Ulricehamn</td>
+              </tr>
+              <tr>
+                <td>16:25</td>
+                <td>Adress, 523 34 Ulricehamn</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="trip-actions">
+            <a href="#" class="trip-link"
+              ><i class="fas fa-edit"></i>Ändra resa</a
+            >
+            <a href="#" class="trip-link cancel-trip"
+              ><i class="fas fa-trash"></i>Avboka</a
+            >
+          </div>
+        </div>
+        <div class="trip-content">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Tisdag 10:e december</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20:00</td>
+                <td>Adress, 523 34 Ulricehamn</td>
+              </tr>
+              <tr>
+                <td>20:25</td>
+                <td>Adress, 523 34 Ulricehamn</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="trip-actions">
+            <a href="#" class="trip-link"
+              ><i class="fas fa-edit"></i>Ändra resa</a
+            >
+            <a href="#" class="trip-link cancel-trip"
+              ><i class="fas fa-trash"></i>Avboka</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup-fönster som visas när en användare avbokar en resa (bekräftelsemeddelande) -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" id="close-popup">&times;</span>
+        <!-- Stäng-knapp -->
+        <div class="icon-confirm">
+          <img src="icons/confirm.png" alt="Confirm" class="confirm-icon" />
+        </div>
+        <p>Din resa är avbokad.</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Laborationsuppgift för kursen DT200G, Grafisk design för webb.</p>
+      <p>© Copyright Ellen Lidén 2024</p>
+      <a href="accessibility.html" class="accessibility-link"
+        >Tillgänglighetsredogörelse</a
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
